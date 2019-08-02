@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="input"/>
+<input type="button" onclick="check()" value="Check"/>
+<input type="text" disabled id="output"/>
+<script>
+    function check() {
+        let oC = parseFloat(document.getElementById("input").value);
+        let oF = oC * 1.8 +32;
+        document.getElementById("output").value = (oF);
+    }
+    </script>
+</body>
+</html>
